@@ -4,14 +4,6 @@ const tableData = data;
 // reference the HTML table using d3
 var tbody = d3.select("tbody");
 
-//function double addition
-function doubleAddition(c,d){
-    var total = addition(c,d)*2;
-    return total;
-}
-
-console.log(doubleAddition(65,34));
-
 function buildTable(data){
     // clear any existing data
     tbody.html("");
@@ -33,7 +25,7 @@ function buildTable(data){
 
 function handleClick(){
     //grab datetime value from filter
-    let data = d3.select("#datetime").property("value");
+    let date = d3.select("#datetime").property("value");
     let filteredData = tableData;
     //check if a date was entered and filter using date
     if (date) {
