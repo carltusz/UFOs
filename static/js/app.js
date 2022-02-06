@@ -8,6 +8,8 @@ function buildTable(data){
     // clear any existing data
     tbody.html("");
 
+    console.log(data)
+
     //loop through each object in data
     //append a row & cells for each value in row
     data.forEach((dataRow) => {
